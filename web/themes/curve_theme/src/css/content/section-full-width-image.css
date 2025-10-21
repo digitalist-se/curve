@@ -1,0 +1,24 @@
+.paragraph--type--full-width-image {
+  height: 125vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (width >= 768px) {
+    height: 60vh;
+  }
+  @media (width >= 1024px) {
+    background-attachment: fixed;
+    height: 100vh;
+  }
+
+  &.image-style-narrow_height {
+    height: 50vw;
+    @media (width >= 768px) {
+      height: 50vw;
+    }
+    @media (width >= 1024px) {
+      height: 17.3vw;
+      background-attachment: scroll;
+    }
+  }
+}

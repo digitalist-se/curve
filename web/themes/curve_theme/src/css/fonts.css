@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Aptos;
+  src: url("/themes/curve_theme/assets/fonts/aptos/Aptos.woff2")
+      format("woff2"),
+    url("/themes/curve_theme/assets/fonts/aptos/Aptos.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Aptos;
+  src: url("/themes/curve_theme/assets/fonts/aptos/Aptos-Light.woff2")
+      format("woff2"),
+    url("/themes/curve_theme/assets/fonts/aptos/Aptos-Light.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Aptos;
+  src: url("/themes/curve_theme/assets/fonts/aptos/Aptos-Bold.woff2")
+      format("woff2"),
+    url("/themes/curve_theme/assets/fonts/aptos/Aptos-Bold.woff")
+      format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}

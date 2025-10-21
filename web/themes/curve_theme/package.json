@@ -1,0 +1,25 @@
+{
+  "name": "curve_theme",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "NODE_ENV=production postcss src/css/styles.css -o dist/css/styles.css && node minify.js",
+    "build:dev": "NODE_ENV=development postcss src/css/styles.css -o dist/css/styles.css && mkdir -p dist/js && cp -R src/js/. dist/js/",
+    "dev": "chokidar 'src/css/**/*.css' -c 'npm run build:dev'",
+    "lint": "stylelint 'src/css/**/*.css'"
+  },
+  "author": "Didzis Avotiņš @ digitalist.fi",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "cssnano": "^7.1.1",
+    "minify": "^14.1.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1",
+    "postcss-preset-env": "^10.3.1",
+    "stylelint": "^16.24.0",
+    "stylelint-config-standard": "^39.0.0"
+  }
+}

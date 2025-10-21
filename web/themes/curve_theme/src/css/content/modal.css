@@ -1,0 +1,168 @@
+.modal-fixed {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+
+  &.open {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  &:before {
+    @media (width >= 1024px) {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.8;
+    }
+  }
+}
+
+.modal-wrapper {
+  background: var(--color-dawn-yellow);
+  position: absolute;
+  @media (width < 1024px) {
+    left: 0;
+    right: 0;
+    top: 34px;
+    bottom: 0;
+    padding: 0;
+  }
+  @media (width >= 1024px) {
+    left: 2vw;
+    right: 2vw;
+    top: 10vh;
+    padding: 30px 28px;
+    height: 80vh;
+  }
+  @media (width >= 1356px) {
+    left: calc(50% - 650px);
+    right: calc(50% - 650px);
+  }
+}
+
+.modal-logo-wrapper {
+  @media (width < 1024px) {
+    height: 58px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  @media (width >= 1024px) {
+    border-left: 1px solid #000;
+    padding-left: 10px;
+    padding-bottom: 0;
+  }
+
+  img {
+    display: block;
+    @media (width < 1024px) {
+      max-width: 98px;
+    }
+  }
+}
+
+.modal-close {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  @media (width < 1024px) {
+    top: 22px;
+    right: 18px;
+    width: 21px;
+  }
+  @media (width >= 1024px) {
+    top: 28px;
+    right: 28px;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+#modal-scroll-wrapper {
+  overflow-y: scroll;
+  padding: 0 14px;
+  scrollbar-color: #999 transparent;
+  @media (width >= 1024px) {
+    padding: 0;
+    height: calc(80vh - 115px);
+  }
+}
+
+.modal-container {
+  @media (width >= 1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.modal-content {
+  padding-top: 54px;
+  margin-bottom: 2rem;
+  @media (width >= 1024px) {
+    padding-top: 0;
+    max-width: 32%;
+  }
+}
+
+.modal-content-inner {
+  position: relative;
+  @media (width >= 1024px) {
+    min-height: 54.2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.modal-text {
+  @media (width >= 1024px) {
+    border-left: 1px solid #000;
+    padding-left: 10px;
+    padding-top: 32px;
+  }
+  @media (width >= 1024px) and (height >= 880px) {
+    padding-top: calc(32px + 2vh);
+  }
+
+  h2 {
+    @media (width >= 1024px) {
+      font-size: 38px;
+    }
+  }
+
+  p {
+    @media (width >= 1024px) {
+      font-size: 18px;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.modal-form {
+  @media (width >= 1024px) {
+    margin: 0 7.5vw 0 2rem;
+  }
+  @media (width >= 1356px) {
+    margin: 0 6.3rem 0 2rem;
+  }
+  @media (width >= 1024px) and (height >= 880px) {
+    padding-top: calc(80px + 2vh);
+  }
+}

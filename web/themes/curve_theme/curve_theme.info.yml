@@ -1,0 +1,12 @@
+name: curve_theme
+type: theme
+description: "Curve drupal theme"
+core_version_requirement: ">=9.2"
+base theme: stable9
+libraries:
+  - curve_theme/base
+regions:
+  header: "Header"
+  content: "Content"
+  footer: "Footer"
+logo: "assets/logo.svg"

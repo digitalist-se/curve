@@ -1,0 +1,9 @@
+base:
+  version: 1.x
+  css:
+    theme:
+      dist/css/styles.css: {}
+  js:
+    dist/js/main.js: {}
+  dependencies:
+    - core/drupal

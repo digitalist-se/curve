@@ -1,0 +1,87 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{%
+  set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ content }}
+
+  {# Hide contact us functionality temporarily #}
+  <div class="contact-wrapper">
+    <a href="#" data-toggle-contact-us class="button cta white">Contact us</a>
+  </div>
+
+  <div class="mobile-menu-toggle-wrapper">
+    <button id="mobile-menu-toggle" class="button reset mobile-menu-toggle">
+      <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <line x1="0" y1="17" x2="48" y2="17" stroke-width="2" />
+          <line x1="0" y1="31" x2="48" y2="31" stroke-width="2" />
+        </g>
+        
+        <g>
+          <line x1="0" y1="24" x2="48" y2="24" stroke-width="2" />
+          <line x1="0" y1="24" x2="48" y2="24" stroke-width="2" />
+        </g>
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu-fixed">
+    <div id="mobile-menu-scroll">
+      <div id="mobile-menu-wrapper">
+        {# Contents (menu items) for this menu are rendered from field--node--field-page-menu.html.twig via js/main.js #}
+        <ul id="mobile-menu" class="mobile-menu"></ul>
+
+        {# Hide contact us functionality temporarily #}
+        <div class="mobile-menu-contact-wrapper">
+          <a href="#" data-toggle-contact-us>Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-contact-us" class="modal-fixed">
+    <div class="modal-wrapper">
+      <div class="modal-logo-wrapper">
+        <img src="/themes/curve_theme/assets/logo.svg" alt="Curve" />
+      </div>
+
+      <button data-close-contact-us class="button reset modal-close">
+        <img src="/themes/curve_theme/assets/icon-close.svg" alt="Icon Close" />
+      </button>
+
+      <div id="modal-scroll-wrapper">
+        <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal-content-inner">
+              <div class="modal-text">
+                {{ drupal_view('text_block', 'header_contact_us') }}
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-form">
+            {{ drupal_view('webforms', 'contact_us') }}
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

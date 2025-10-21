@@ -34,3 +34,7 @@ drush-backups
 /.gitattributes
 *dump.sql
 .swp
+node_modules
+dist
+.DS_Store
+*.swp
