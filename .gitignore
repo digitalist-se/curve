@@ -32,3 +32,5 @@ drush-backups
 .console
 /.editorconfig
 /.gitattributes
+*dump.sql
+.swp
