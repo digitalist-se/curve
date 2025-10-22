@@ -1,5 +1,5 @@
 .page-footer {
-  background: var(--color-space-gray);
+  background: var(--color-bio-green-3);
   padding: 60px 14px 24px;
   @media (width >= 768px) {
     padding: 32px 28px;
@@ -44,15 +44,15 @@
   }
 }
 
-.block-block-footer-contacts {
+.block-block-curve-theme-footer-contacts {
   color: #eae3de;
   @media (width >= 768px) {
     flex: 1;
   }
 }
 
-.block-block-footer-bottom {
-  color: #000;
+.block-block-curve-theme-footer-bottom {
+  color: #FFF;
   @media (width >= 768px) {
     display: flex;
     align-items: flex-end;
