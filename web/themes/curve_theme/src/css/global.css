@@ -14,8 +14,7 @@
   --color-bio-green-1: #BAE0CD;
   --color-bio-green-2: #60AF83;
 
-  --font-primary: "Aptos", "Segoe UI", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  --font-primary: "IBM Plex Sans", sans-serif;
 }
 
 * {

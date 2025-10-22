@@ -1,8 +1,8 @@
 @font-face {
-  font-family: Aptos;
-  src: url("/themes/curve_theme/assets/fonts/aptos/Aptos.woff2")
+  font-family: "IBM Plex Sans";
+  src: url("/themes/curve_theme/assets/fonts/ibm-plex-sans/IBMPlexSans-Regular.woff2")
       format("woff2"),
-    url("/themes/curve_theme/assets/fonts/aptos/Aptos.woff")
+    url("/themes/curve_theme/assets/fonts/ibm-plex-sans/IBMPlexSans-Regular.woff")
       format("woff");
   font-weight: normal;
   font-style: normal;
@@ -10,10 +10,10 @@
 }
 
 @font-face {
-  font-family: Aptos;
-  src: url("/themes/curve_theme/assets/fonts/aptos/Aptos-Light.woff2")
+  font-family: "IBM Plex Sans";
+  src: url("/themes/curve_theme/assets/fonts/ibm-plex-sans/IBMPlexSans-Light.woff2")
       format("woff2"),
-    url("/themes/curve_theme/assets/fonts/aptos/Aptos-Light.woff")
+    url("/themes/curve_theme/assets/fonts/ibm-plex-sans/IBMPlexSans-Light.woff")
       format("woff");
   font-weight: 300;
   font-style: normal;
@@ -21,10 +21,10 @@
 }
 
 @font-face {
-  font-family: Aptos;
-  src: url("/themes/curve_theme/assets/fonts/aptos/Aptos-Bold.woff2")
+  font-family: "IBM Plex Sans";
+  src: url("/themes/curve_theme/assets/fonts/ibm-plex-sans/IBMPlexSans-Bold.woff2")
       format("woff2"),
-    url("/themes/curve_theme/assets/fonts/aptos/Aptos-Bold.woff")
+    url("/themes/curve_theme/assets/fonts/ibm-plex-sans/IBMPlexSans-Bold.woff")
       format("woff");
   font-weight: 700;
   font-style: normal;
