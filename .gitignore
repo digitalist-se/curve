@@ -33,6 +33,7 @@ drush-backups
 /.editorconfig
 /.gitattributes
 *dump.sql
+*.sql.gz
 .swp
 node_modules
 dist

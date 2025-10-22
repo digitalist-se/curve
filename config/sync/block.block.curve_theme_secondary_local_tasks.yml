@@ -1,0 +1,22 @@
+uuid: 628e11a3-7a95-4953-a9ea-98509e6b3395
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - curve_theme
+_core:
+  default_config_hash: 2L0geP-ixCbCkEpW6BVF6H7vDUZN4ea07_Y9CociQm4
+id: curve_theme_secondary_local_tasks
+theme: curve_theme
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

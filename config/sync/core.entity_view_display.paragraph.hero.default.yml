@@ -1,0 +1,50 @@
+uuid: cd16a276-45b4-4d39-8a06-b398e4184b6f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero.field_image_desktop
+    - field.field.paragraph.hero.field_image_mobile
+    - field.field.paragraph.hero.field_text
+    - field.field.paragraph.hero.field_title
+    - paragraphs.paragraphs_type.hero
+  module:
+    - image
+id: paragraph.hero.default
+targetEntityType: paragraph
+bundle: hero
+mode: default
+content:
+  field_image_desktop:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: image_w_3840_scale
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image_mobile:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: image_w_1400_scale
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

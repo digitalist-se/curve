@@ -1,0 +1,24 @@
+uuid: badc43ff-f78c-4030-825a-417c48fc31c5
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - views.view.text_block
+  module:
+    - views
+  theme:
+    - curve_theme
+id: curve_theme_footer_bottom
+theme: curve_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'views_block:text_block-block_2'
+settings:
+  id: 'views_block:text_block-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }
