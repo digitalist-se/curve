@@ -20,7 +20,7 @@
 .page-header-topbar {
   height: 34px;
   width: 100%;
-  background: var(--color-space-gray);
+  background: var(--color-lime-green);
   @media (width >= 1024px) {
     display: none;
   }
@@ -29,7 +29,7 @@
 .region-header {
   display: flex;
   position: relative;
-  padding: 6px 14px 0;
+  padding: 0 14px;
   height: 58px;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +52,7 @@
     width: 100%;
     max-width: 98px;
     @media (width >= 1024px) {
-      max-width: 155px;
+      max-width: 177px;
     }
   }
 }

@@ -29,7 +29,7 @@
 }
 
 .modal-wrapper {
-  background: var(--color-dawn-yellow);
+  background: var(--color-lime-green);
   position: absolute;
   @media (width < 1024px) {
     left: 0;

@@ -5,38 +5,6 @@
     padding: 5.6vw 0 9.7vw;
   }
 
-  &.white {
-    background-color: #fff;
-  }
-
-  &.dawn_yellow {
-    background-color: var(--color-dawn-yellow);
-  }
-
-  &.sky_blue_light {
-    background-color: var(--color-sky-blue-light);
-  }
-
-  &.earth_gray {
-    background-color: var(--color-earth-gray);
-  }
-
-  &.earth_brown {
-    background-color: var(--color-earth-brown);
-  }
-
-  &.over_lines {
-    @media (width >= 1024px) {
-      z-index: 2;
-    }
-  }
-
-  &.over_center_line {
-    @media (width >= 1024px) {
-      z-index: 1;
-    }
-  }
-
   .tt-container {
     @media (width >= 1024px) {
       display: flex;
